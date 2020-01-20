@@ -1,3 +1,11 @@
+/*
+***************************************************
+*__author__ = Abinash Biswal                     **
+*All rights reserved (c) 2019 Abinash Biswal.    **
+***************************************************
+*/
+
+
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
