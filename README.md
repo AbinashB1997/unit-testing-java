@@ -1,3 +1,3 @@
 # unit-testing-java
 
-Download ZIP and put all files inside JavaFiles. 
+Download ZIP and put all files/folder inside JavaFiles. 
