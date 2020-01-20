@@ -1,0 +1,14 @@
+todo
+.dockerignore
+Email_credentials.py
+.pytest_cache
+__pycache__
+session-management
+copyFiles.py
+email_credentials.py
+EmailUser.java
+getFileName.class
+getFileName.java
+Main.class
+output.txt
+redirectUser.class

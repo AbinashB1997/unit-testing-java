@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.app.app3Test
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in com.mycompany.app.app3Test
+count1(com.mycompany.app.app3Test)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count1(app3Test.java:11)
+
+count2(com.mycompany.app.app3Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count2(app3Test.java:16)
+
+count3(com.mycompany.app.app3Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count3(app3Test.java:21)
+
+count4(com.mycompany.app.app3Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count4(app3Test.java:26)
+
+count5(com.mycompany.app.app3Test)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count5(app3Test.java:31)
+
+count6(com.mycompany.app.app3Test)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count6(app3Test.java:36)
+
+count7(com.mycompany.app.app3Test)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count7(app3Test.java:41)
+
+count8(com.mycompany.app.app3Test)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app3 cannot be resolved
+
+	at com.mycompany.app.app3Test.count8(app3Test.java:46)
+

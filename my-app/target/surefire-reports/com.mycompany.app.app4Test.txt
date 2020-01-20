@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.app.app4Test
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.mycompany.app.app4Test
+count1(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count1(app4Test.java:11)
+
+count2(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count2(app4Test.java:16)
+
+count3(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count3(app4Test.java:21)
+
+count4(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count4(app4Test.java:26)
+
+count5(com.mycompany.app.app4Test)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count5(app4Test.java:31)
+
+count6(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count6(app4Test.java:36)
+
+count7(com.mycompany.app.app4Test)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count7(app4Test.java:41)
+
+count8(com.mycompany.app.app4Test)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	app4 cannot be resolved
+
+	at com.mycompany.app.app4Test.count8(app4Test.java:46)
+
