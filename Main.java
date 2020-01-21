@@ -24,6 +24,22 @@ public class Main {
         return ((total - got) / (total * 1.0)) * 100.0;
     }
 
+// --------> Get file Size in Byte, to verify if a file is written or not   <----------------------------------
+
+    public static boolean isEmptyFile(File file) {
+        return file.length() > 0 ? false : true;
+    }
+
+
+// Insert the class template if the question is not attempted by user
+
+
+    public static void insertTemplate(File file, String fileName) throws Exception {
+        FileWriter fw = new FileWriter(file);
+        fw.write("package com.mycompany.app;\n" + "public class " + fileName + "{ \n" + "public static void main(String[] args) {\n" + "System.out.println();\n}\n}");
+        fw.close();
+    }
+
 // --------> Created the body of email here, by creating the output.txt file <--------------------------------
 
     public static void WriteData(String str) throws IOException  {
@@ -67,10 +83,11 @@ public class Main {
 //  ------------> Calculating the total percentage by accumulating individual percentage of each code <---------------
 
     public static double totalPercentage(List<String> fileName) throws Exception {
-        double totalPercentage = 0.0, current_percentage;
+        double totalPercentage = 0.0, current_percentage = 0.0;
         for (String filesName : fileName) {
             System.out.println("Name is : " + filesName);
-            File file = new File("JavaFiles/my-app/target/surefire-reports/com.mycompany.app."+ filesName + "Test.txt");
+            String FILENAME = "JavaFiles/my-app/target/surefire-reports/com.mycompany.app."+ filesName + "Test.txt";
+            File file = new File(FILENAME);
             Scanner sc = new Scanner(file);
             String regex = "run:";
             Pattern pattern = Pattern.compile(regex);
@@ -104,7 +121,15 @@ public class Main {
 
 //  -----------> INITIALIZING the program where we will simply run a command to build the test [It will generate the report as well]<--------------
 
-    public static void INIT() {
+    public static void INIT(List<String> fileName) throws Exception {
+        for (String filesName : fileName) {
+            File srcFile = new File("JavaFiles/my-app/src/main/java/com/mycompany/app/" + filesName + ".java");
+            if(srcFile.exists() && isEmptyFile(srcFile)) {
+                Main.insertTemplate(srcFile, filesName);
+                System.out.println("Written the template");
+            }
+        }
+
         try {
             Process process = Runtime.getRuntime().exec("mvn -f JavaFiles/my-app package");
             BufferedReader b = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -118,10 +143,9 @@ public class Main {
         }
     }
 
-//  ------------>  Here we will write the percentage and do the needful
+//  ------------>  Here we will write the percentage and do the needful <---------------
 
-    public static void PROCESS() throws Exception {
-        List<String> fileName = getFiles();
+    public static void PROCESS(List<String> fileName) throws Exception {
         double totalPercentage = totalPercentage(fileName);
         System.out.println(String.format("%.2f", totalPercentage / 5) + "%");
         WriteData(String.format("%.2f", totalPercentage / 5));
@@ -132,8 +156,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        Main.INIT();
-        Main.PROCESS();
+        List<String> fileName = Main.getFiles();
+        Main.INIT(fileName);
+        Main.PROCESS(fileName);
         Main.EMAIL();
     }
 }
